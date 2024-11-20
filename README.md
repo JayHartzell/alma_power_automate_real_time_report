@@ -246,13 +246,13 @@ Go into the completed run, find the output of the Response object and copy it. E
 
 Add a switch condition.
 
-- Switch on triggerBody()?['event']?['value']  
+- Switch on ```triggerBody()?['event']?['value']```  
 - Add two cases: LOAN_CREATED, LOAN_RETURNED  
 - Save
 
 Within the LOAN_CREATED case, add another switch condition.
 
-Switch on triggerBody()?['item_loan']?['circ_desk']?['value']
+Switch on ```triggerBody()?['item_loan']?['circ_desk']?['value']```
 
 - Add a case for the circ desk you want to track.  
 - Save
