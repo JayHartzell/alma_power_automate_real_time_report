@@ -110,9 +110,7 @@ You’ll be returned an array of member objects, each containing an id, descript
 
 We’re going to take the link value returned for each set member and make a GET API call to the bibs /loans endpoint. You do so by taking the value and appending the rest of the required url:
 
-/loans?&format=json&apiKey={bib_key}
-
-[https://api-na.hosted.exlibrisgroup.com/almaws/v1/bibs/991000010309705274/holdings/2231678880005274/items/2331678820005274/loans?&format=json&apiKey={bib_key](https://api-na.hosted.exlibrisgroup.com/almaws/v1/bibs/991000010309705274/holdings/2231678880005274/items/2331678820005274/loans?&format=json&apiKey={bib_key)}
+```/loans?&format=json&apiKey={bib_key}```
 
 You’ll be returned an item_loan object, which we’ll use to build and populate the report.
 
